@@ -1,0 +1,54 @@
+body{
+    background: purple;
+}
+
+.nav__es{
+    color: #fff;);
+}
+
+.nav__en{
+    color:#00a1ff;
+}
+
+.nav__translate{
+    padding-left: 20px;
+}
+
+.nav__check{
+    position: relative;
+    width: 50px;
+}
+
+.nav__check:hover{
+    cursor: pointer;
+}
+
+.nav__check::before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    background: #fff;
+    border-radius: 25px;
+}
+
+.nav__check::after{
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    border-radius: 25px;
+    transition: 0.25;
+    border: 2px solid #333;
+    box-sizing: border-box;
+}
+
+.nav__check:checked::after{
+    left: 25px;
+    border: 1px solid #00a1ff;
+}
+
+.nav__check:checked::before{
+    background: #00a1ff;
+}
